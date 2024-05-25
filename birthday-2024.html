@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wawa's Birthday</title>
+    <link rel="stylesheet" href="timer.css">
+    <style>
+      html{
+        font-size: 62.5%;
+        overflow: hidden;
+      }
+
+      body{
+        width: 100%;
+        height: 95vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="timer-container">
+
+      <div class="password">
+        <div id="blur-background" onclick="this.parentElement.style.display = 'none'"></div>
+        <div class="password-form">
+          <h2>Password</h2>
+          <input type="password" name="password" placeholder="Input your password..." id="pass" autofocus>
+          <button id="signIn" onclick="password()">Sign In</button>
+        </div>
+      </div>
+
+      <h1><span>Wawa's</span> Countdown</h1>
+      <p id="timer"></p>
+      <button id="disable" onclick="login()">Open it</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="timer.js"></script>
+  </body>
+</html>
